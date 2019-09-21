@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <script type="text/javascript"> 
+          
+            // Function to check Whether both passwords 
+            // is same or not. 
+            function checkPassword(form) { 
+                 pwd = form.pwd.value; 
+                 pwd1 = form.pwd1.value;
+
+                // If password not entered 
+                if (pwd == '') 
+                    alert ("Please enter Password"); 
+                      
+
+                // If confirm password not entered 
+                else if (pwd1 == '') 
+                    alert ("Please enter confirm password"); 
+                      
+
+                // If Not same return False.     
+                else if (pwd != pwd1) { 
+                    alert ("\nPassword did not match: Please try again...") 
+                    return false; 
+                } 
+
+              // Checking the length of password 
+               else if(pwd.length<6){  
+                    alert("Password must be at least 6 characters long.");  
+                    return false;  
+                 }  
+                 
+              // If same return True. 
+                else{ 
+                    alert ("Password match: Welcome to login page")
+                    return true; 
+                } 
+            } 
+        </script> 
+     <title>Registration Page</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+     <div class = "header">
+          <h2>Register</h2>
+     </div>
+     
+      <form method = "post" action = "connection.php" onSubmit="return checkPassword(this)">
+          <div class="input-group">
+               <label>First Name</label>
+               <input type = "text" name = "fname" required>
+          </div>
+
+          <div class="input-group">
+               <label>Last Name</label>
+               <input type = "text" name = "lname" required>
+          </div>
+    
+          <div class="input-group">
+               <label>Email Address</label>
+               <input type = "email" name = "email" required>
+          </div>
+
+          <div class="input-group">
+               <label>Contact Number</label>
+               <input type = "text" name = "mno"  pattern = "[1-9]{1}[0-9]{9}" title = "Enter ten digit Mobile number" required>
+          </div>
+ 
+          <div class="input-group">
+               <label>Password</label>
+               <input type = "password" name = "pwd" required>
+          </div>
+   
+          <div class="input-group">
+               <label>Confirm Password</label>
+               <input type = "password" name = "pwd1" required>
+          </div>
+      
+          <div class="input-group">
+               <button type = "submit" name = "submit" class = "btn">Register</button>
+          </div>
+          <p> 
+               Already registered?<a href = "login1.html">Sign in</a>
+         </p>
+  
+      </form>
+   </body>
+</html>

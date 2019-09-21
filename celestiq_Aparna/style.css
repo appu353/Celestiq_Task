@@ -1,0 +1,70 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body {
+    font-size: 120%;
+    background: #F8F8FF;
+}
+.header {
+       width: 30%;
+       margin: 50px auto 0px;
+       color: white;
+       background: #5F9EA0;
+       text-align: center;
+       border: 1px solid #B0C4DE;
+       border-bottom: none;
+       border-radius: 10px 10px 0px 0px;
+       padding: 20px;
+       text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+form {
+     width: 30%;
+     margin: 0px auto;
+     padding: 20px;
+     border: 1px solid #B0C4DE;
+     background: white;
+     border-radius: 0px 0px 10px 10px;
+     box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	
+		 0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+}
+.input-group {
+     margin: 10px 0px 10px 0px;
+}
+.input-group label {
+     display: block;
+     text-align: left;
+     margin: 3px;
+     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+.input-group input {  
+     height: 20px;
+     width: 83%;
+     padding: 5px 10px;
+     font-size: 16px;
+     border-radius: 5px;
+     border: 1px solid gray;
+}
+.btn {
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background: #5F9EA0;
+    border: none;
+    border-radius:5px;
+}
+.successRegistration {
+     display:flex;
+     align-item: center;
+     justify-content: center;
+     top:50%;
+     left:50%;
+     position: fixed;
+     margin-top: -100px;
+     margin-left: -230px;
+     
+}
+
+
+
+     
